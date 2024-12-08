@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 bg-white dark:bg-customLight relative">
+  <div class="m-5 bg-white dark:bg-customLight">
     <h1 class="bg-auto text-3xl font-bold text-black dark:text-white">KÊNH ĐÃ ĐĂNG KÍ</h1>
     <!-- nội dung chính -->
     <div class="flex flex-col bg-auto m-5 dark:bg-customLight ">

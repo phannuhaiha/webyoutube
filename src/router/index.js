@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ProductView from '../views/ProductView.vue'
 import Home from '../views/Home.vue'
 import Subscription from '../views/Subscription.vue';
+import Login from '@/views/Login.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,7 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'producthome',
           redirect: '/product',
 
         },
@@ -29,6 +31,11 @@ const router = createRouter({
         },
       ]
     },
+    {
+      path:'/login',
+      name:'login',
+      component: Login,
+    }
     
     
     

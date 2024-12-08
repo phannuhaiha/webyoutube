@@ -11,7 +11,7 @@
             <div class="w-8 h-1 bg-white dark:bg-white"></div>
           </div>
   
-          <!-- Logo VAA -->
+          <!-- Logo -->
           <div class="bg-auto rounded-full py-2 text-white text-4xl font-bold" style="width: 120px; height: 70px;">
             <img src="./icons/Logo.png" class="flex w-full h-full">
           </div>
