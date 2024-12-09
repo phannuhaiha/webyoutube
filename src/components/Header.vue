@@ -46,9 +46,12 @@
           </button>
   
           <!-- Avatar tròn -->
-          <button>
-            <i class='bx bx-user-circle text-4xl text-white'></i>
-          </button>
+          <router-link to="/login">
+            <button>
+              <i class='bx bx-user-circle text-4xl text-white'></i>
+            </button>
+          </router-link>
+          
   
           <!-- Nút chuyển đổi giữa chế độ tối và sáng -->
           <button @click="toggleTheme" class="ml-2">
