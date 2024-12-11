@@ -1,5 +1,5 @@
 <template>
-    <div class="relative">
+    <div class="relative sticky top-0 z-50">
       <!-- Header -->
       <div :class="isDarkMode ? 'dark' : ''" class="flex justify-between items-center p-1 bg-darkCustom dark:bg-customLight text-black dark:text-white" >
         <!-- Góc trái: Menu Icon và Logo -->
@@ -12,9 +12,12 @@
           </div>
   
           <!-- Logo -->
-          <div class="bg-auto rounded-full py-2 text-white text-4xl font-bold" style="width: 120px; height: 70px;">
-            <img src="./icons/Logo.png" class="flex w-full h-full">
-          </div>
+           <router-link to="/product">
+            <div class="bg-auto rounded-full py-2 text-white text-4xl font-bold" style="width: 120px; height: 70px;">
+              <img src="../icons/Logo.png" class="flex w-full h-full">
+            </div>
+           </router-link>
+          
         </div>
   
         <!-- Ở giữa: Thanh tìm kiếm -->
@@ -46,11 +49,11 @@
           </button>
   
           <!-- Avatar tròn -->
-          <router-link to="/login">
+          <RouterLink to="/login">
             <button>
               <i class='bx bx-user-circle text-4xl text-white'></i>
             </button>
-          </router-link>
+          </RouterLink>
           
   
           <!-- Nút chuyển đổi giữa chế độ tối và sáng -->
@@ -68,6 +71,7 @@
   
   <script>
   import 'boxicons/css/boxicons.min.css'; // Import Boxicons
+import { RouterLink } from 'vue-router';
   
   export default {
     name: 'Header',

@@ -1,16 +1,16 @@
 <template>
     <div
       :class="[isOpen ? 'w-50' : 'w-16', isDarkMode ? 'bg-gray-900' : 'bg-slate-400']"
-      class="text-black min-h-screen transition-all duration-300 ease-in-out p-4">
+      class="fixed text-black min-h-screen transition-all duration-300 ease-in-out p-4">
 
       <div class="flex flex-col space-y-10">
         <!-- Trang Chủ -->
-        <router-link to="/product">
+        <RouterLink to="/product">
           <button class="flex items-center space-x-2">
-          <i :class="isDarkMode ? 'text-black' : 'text-black'" class="bx bx-home-alt text-2xl"></i>
+          <i :class="isDarkMode ?  'text-black' : 'text-black'" class="bx bx-home-alt text-2xl"></i>
           <span v-if="isOpen">Trang Chủ</span>
         </button>
-        </router-link>
+        </RouterLink>
       
         <!-- Kênh Đăng Ký -->
         <router-link to="/subscription">
@@ -20,7 +20,6 @@
         </button>
         </router-link>
         
-  
         <!-- Phim Bộ -->
         <button class="flex items-center space-x-2">
           <i :class="isDarkMode ? 'text-white' : 'text-black'" class="bx bx-movie text-2xl"></i>

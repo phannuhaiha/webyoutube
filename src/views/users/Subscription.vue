@@ -7,11 +7,11 @@
       <button class="flex flex-row text-black dark:text-white">
         <div class="flex w-7 h-7 rounded-full items-center mr-2 bg-gray-400"></div>
         <!-- ten kenh -->
-        <div class="text-lg font-arial font-medium">{{ video.channel }}</div>
+        <div class="text-lg font-arial font-medium">hihi</div>
       </button>
 
       <!-- list video -->
-      <div class="flex flex-row w-auto h-52 bg-white dark:bg-customLight rounded-xl pt-2 ">
+      <div class="flex flex-row w-auto h-52 bg-gray-200 dark:bg-customLight rounded-xl pt-2 ">
         <!-- mot video -->
         <button v-for="(video, index) in videos":key="index" class="flex flex-col bg-auto rounded-xl text-black" style="width: 100%">
           <!-- Video Container -->
@@ -52,16 +52,7 @@ export default {
   name: "Subscription",
   data() {
     return {
-      videos: [
-        { src: "video1.mp4", title: "Video 1", views: "10K" },
-        // { src: "video2.mp4", title: "Video 2", views: "20K" },
-        // { src: "video3.mp4", title: "Video 3", views: "15K" },
-        // { src: "video4.mp4", title: "Video 4", views: "30K" },
-        // { src: "video5.mp4", title: "Video 5", views: "5K" },
-        // { src: "video6.mp4", title: "Video 6", views: "8K" },
-      ],
-      currentIndex: 0, // Vị trí hiện tại
-      maxIndex: 0, // Tổng số slide
+      videos: null,  
     };
   },
   computed: {

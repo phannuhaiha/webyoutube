@@ -18,8 +18,8 @@
 
 <script>
 import { RouterView } from 'vue-router';
-import Header from '../components/Header.vue';
-import Nav from '../components/Nav.vue';
+import Header from '@/components/users/Header.vue';
+import Nav from '@/components/users/Nav.vue';
 
 export default {
   name: 'Home',
